@@ -21,11 +21,12 @@ public class User {
         
 	    @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Integer id;
+	    private Integer id;
 		private String name;
 		private String mail_id;
 		private String password;
 		private String mobilenumber;
+		private String role;
 	}  
 
 	
