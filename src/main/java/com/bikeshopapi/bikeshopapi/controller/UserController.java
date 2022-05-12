@@ -120,9 +120,8 @@ public class UserController {
 
 		@DeleteMapping("Admin/listUser/{name}")
 		public void delete(@PathVariable("name") String name) {
-			userRepository.deleteByname(name);
-
-		}
+			userRepository.deleteByName(name);		
+			}
 		}
 		
 

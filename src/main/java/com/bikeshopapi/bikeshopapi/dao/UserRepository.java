@@ -26,7 +26,7 @@ import com.bikeshopapi.bikeshopapi.model.User;
 		@Transactional
 		@Modifying
 		
-		void deleteByname(String name);
+		void deleteByName(String name);
          
 		@Query("select u from com.bikeshopapi.bikeshopapi.model.User u where u.name=:name")
 		User findByNameAndPassword(@Param("name") String name);
